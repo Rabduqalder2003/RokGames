@@ -4,13 +4,20 @@
   <title>More to come...</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* pushes bottom text down */
       background-color: black;
       color: red;
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
     }
 
     h1 {
@@ -31,18 +38,36 @@
       font-size: 16px;
       cursor: pointer;
       margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .btn:hover {
       background-color: #ff4d4d;
     }
+
+    .bottom-text {
+      color: #ff4d4d;
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .bottom-text:hover {
+      color: red;
+    }
   </style>
 </head>
 <body>
 
-<h1>RokGames</h1>
-<p>More games from RokGames will come soon, at the moment, please wait.</p>
-<a href="index.html" class="btn">Back to home</a>
+  <div>
+    <h1>RokGames</h1>
+    <p>More games from RokGames will come soon, at the moment, please wait.</p>
+    <a href="index.html" class="btn">Back to home</a>
+  </div>
+
+  <a href="mascot.html" class="bottom-text">Meet our Mascot</a>
 
 </body>
 </html>

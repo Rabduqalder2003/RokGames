@@ -4,17 +4,20 @@
   <title>RokGames</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-color: black;
       color: red;
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     h1 {
@@ -35,7 +38,6 @@
       font-size: 16px;
       cursor: pointer;
       margin-top: 20px;
-      display: inline-block;
       text-decoration: none;
     }
 
@@ -43,28 +45,24 @@
       background-color: #ff4d4d;
     }
 
-    .bottom-link {
+    .bottom-text {
       color: #ff4d4d;
-      text-decoration: underline;
-      margin-bottom: 20px;
-      display: inline-block;
-    }
-
-    .bottom-link:hover {
-      color: red;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
 
-<div>
-  <h1>RokGames</h1>
-  <p>Thank you for visiting my website! This website has all my games you can play!</p>
-  <a href="https://www.newgrounds.com/portal/view/1015197" class="btn">Little Timmy Goes to McDonalds</a>
-  <a href="moretocome.html" class="btn">More to come...</a>
-</div>
+  <div>
+    <h1>Meet our Mascot!</h1>
+    <p>This is Rok The Ball</p>
+    <img src="ball.png" alt="Rok The Ball" style="width:128px; height:128px">
+    <p>He’s a red ball with a cool personality! If you see this character in a game, it means it was made by us.</p>
+    <a href="index.html" class="btn">Back to home</a>
+  </div>
 
-<a href="mascot.html" class="bottom-link">Meet our Mascot</a>
+  <p class="bottom-text">Meet our Mascot</p>
 
 </body>
 </html>
