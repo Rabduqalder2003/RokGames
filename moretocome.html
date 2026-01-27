@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>More to come...</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     html, body {
       height: 100%;
@@ -11,13 +10,12 @@
     }
 
     body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* pushes bottom text down */
       background-color: black;
       color: red;
       font-family: Arial, sans-serif;
       text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
     h1 {
@@ -46,15 +44,20 @@
       background-color: #ff4d4d;
     }
 
-    .bottom-text {
-      color: #ff4d4d;
-      font-size: 16px;
-      margin-bottom: 10px;
-      text-decoration: underline;
-      cursor: pointer;
+    .footer {
+      margin-top: auto;
+      margin-bottom: 20px;
     }
 
-    .bottom-text:hover {
+    .bottom-link {
+      color: #ff4d4d;
+      text-decoration: underline;
+      margin: 0 10px;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .bottom-link:hover {
       color: red;
     }
   </style>
@@ -67,7 +70,10 @@
     <a href="index.html" class="btn">Back to home</a>
   </div>
 
-  <a href="mascot.html" class="bottom-text">Meet our Mascot</a>
+  <div class="footer">
+    <a href="mascot.html" class="bottom-link">Meet our Mascot</a>
+    <a href="about.html" class="bottom-link">About</a>
+  </div>
 
 </body>
 </html>
